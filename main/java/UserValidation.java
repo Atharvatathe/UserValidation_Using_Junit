@@ -34,4 +34,9 @@ public class UserValidation {
         Pattern pattern = Pattern.compile(PASSWORD_PATTERN);
         return pattern.matcher(password).matches();
     }
+
+    public boolean validEmailAddress(String email){
+       Pattern pattern = Pattern.compile(EMAILID_PATTERN);
+       return pattern.matcher(email).matches();
+    }
 }
